@@ -1,0 +1,51 @@
+.Head{
+    display: flex;
+    padding: 5% 28% 5% 0%;
+    Width:100%;
+    text-align: center;
+}
+section{
+
+    width: 60%;
+    margin-left: 4%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.ConfirmedData{
+    background-color: rgba(246, 246, 247,0.6);
+    border-radius: 5px;
+    color: black;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+}
+.ActiveData{
+    background-color:rgba(179, 179, 225,0.4);
+    color: rgb(48, 48, 221);
+    border-radius: 5px;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+}
+.RecoveredData{
+    background-color:rgba(146, 229, 163,0.6);
+    color: rgb(3, 94, 3);
+    border-radius: 5px;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+}
+.DeathsData{
+    background-color:rgba(255,128,128,0.6);
+    color: #ff0000;
+    border-radius: 5px;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+}
+
+.Header{
+    text-align: center;
+}
+
+@media(max-width:500px){
+    .Head{
+        width: 200%;
+        
+    }
+    body{
+        text-align: center;
+    }
+}

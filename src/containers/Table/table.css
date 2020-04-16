@@ -1,0 +1,58 @@
+table{
+    width: 92%;
+    column-count: 5;
+    column-gap: 20px;
+    margin-left: 3% ;
+    margin-top: 10%;
+}
+abbr{
+    padding: 10px;
+}
+td{
+
+padding: 10px;
+text-align: center;
+border: 1px solid #eee;
+box-sizing: border-box;
+cursor: pointer;
+border-radius:4px;
+background-color:#E0E5EC;
+box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+
+}
+td:hover,
+td:active {
+    background-color: #C0DDF5;
+}
+.Deaths{
+    color:crimson;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Recovered{
+    color:green;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Active{
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Confirmed{
+    font-size: 15px;
+    font-weight: bold;
+}
+.States{
+    font-weight: bold;
+    font-size: 15px;
+    width: 30%;
+    
+}
+@media(max-width:500px){
+    table{
+        width: 10%;
+        margin-left: -20px ;
+        margin-top: 20px;
+    }
+}

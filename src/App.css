@@ -1,0 +1,21 @@
+body{
+  text-align: center;
+}
+.App {
+  text-align: center;
+}
+.Total{
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: crimson;
+  
+}
+.Posts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
