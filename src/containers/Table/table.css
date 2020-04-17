@@ -1,5 +1,5 @@
 table{
-    width: 92%;
+    width: 50%;
     column-count: 5;
     column-gap: 20px;
     margin-left: 3% ;
@@ -25,17 +25,17 @@ td:active {
     background-color: #C0DDF5;
 }
 .Deaths{
-    color:crimson;
+    color:#E12D48;
     font-size: 15px;
     font-weight: bold;
 }
 .Recovered{
-    color:green;
+    color:#3EDB66;
     font-size: 15px;
     font-weight: bold;
 }
 .Active{
-    color: blue;
+    color: #175AF3;
     font-size: 15px;
     font-weight: bold;
 }

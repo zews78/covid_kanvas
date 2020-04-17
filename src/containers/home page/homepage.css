@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E5EC;
+  }
+  .App {
+    text-align: center;
+  }
+  .Content{
+    display:flex;
+   
+  
+  }
+  .Total{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: #E12D48;
+    
+  }
+  .Posts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  @media(max-width:500px){
+    .Content{
+      display: grid;
+    }
+  }
+  

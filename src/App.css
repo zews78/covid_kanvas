@@ -4,11 +4,16 @@ body{
 .App {
   text-align: center;
 }
+.Content{
+  display:flex;
+ 
+
+}
 .Total{
   text-align: center;
   justify-content: center;
   align-content: center;
-  color: crimson;
+  color: #E12D48;
   
 }
 .Posts {
@@ -19,3 +24,8 @@ body{
   margin: auto;
 }
 
+@media(max-width:500px){
+  .Content{
+    display: grid;
+  }
+}

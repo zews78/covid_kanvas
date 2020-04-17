@@ -1,8 +1,8 @@
 .Head{
     display: flex;
-    padding: 5% 28% 5% 0%;
-    Width:100%;
-    text-align: center;
+    padding: 5% ;
+    Width:60%;
+    text-align: left;
 }
 section{
 
@@ -24,14 +24,14 @@ section{
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
 }
 .RecoveredData{
-    background-color:rgba(146, 229, 163,0.6);
+    background-color:rgba(62, 219, 102,0.4);
     color: rgb(3, 94, 3);
     border-radius: 5px;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
 }
 .DeathsData{
     background-color:rgba(255,128,128,0.6);
-    color: #ff0000;
+    color: #E12D48;
     border-radius: 5px;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
 }
