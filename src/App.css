@@ -1,5 +1,6 @@
 body{
   text-align: center;
+  margin-bottom: 100px;
 }
 .App {
   text-align: center;
@@ -16,13 +17,7 @@ body{
   color: #E12D48;
   
 }
-.Posts {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 80%;
-  margin: auto;
-}
+
 
 @media(max-width:500px){
   .Content{

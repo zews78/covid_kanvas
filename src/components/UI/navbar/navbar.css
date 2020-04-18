@@ -1,0 +1,39 @@
+
+.NavBar{
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+    border: 1px solid rgb(168, 193, 194);
+    box-shadow: 9px 9px 16px rgba(110, 130, 160, 0.6), -9px -9px 16px    rgba(94, 134, 146, 0.5);
+}
+
+.home{
+    
+    
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+}
+.suggestion{
+  
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+}
+.Faq{
+
+  
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+}
+.about{
+
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './head.css';
 
 const head=(props)=>{
@@ -6,6 +7,7 @@ const head=(props)=>{
     const header=props.data.map(info=>{
         return(
             <div className='Head' key={info.statecode}>
+                
                 <section className='ConfirmedData'>
                     <h1 style={{textAlign:'left' ,fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}} >Confirmed</h1>
                     <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%' }}>{info.confirmed}</div>

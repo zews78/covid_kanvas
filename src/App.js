@@ -1,6 +1,6 @@
 import React from 'react';
 import HomePage from './containers/home page/homepage';
-import SearchResult from './components/UI/search bar/searchhandler/searchresult';
+import NavBar from './components/UI/navbar/navbar';
 import './App.css';
 
 class App extends React.Component {
@@ -13,9 +13,9 @@ class App extends React.Component {
     
     return (
      <div>
-       
+       <NavBar/>
        <HomePage/>
-       <SearchResult/>
+       
      </div>
     );
   }

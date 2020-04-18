@@ -38,14 +38,17 @@ class Homepage extends React.Component{
         if(!this.state.loading){
             return homepage=<div className="App">
                
-            <div style={{textAlign:'left'}}>
-              <TimeStamp data={this.state.Total} />
+            <div style={{textAlign:'center',marginLeft:'-75px'}}>
+              
               <Head data={this.state.Total}/>
+              
             </div>
     
             <div className='Content'>
+            
               <Table/> 
-              <div style={{marginTop:'200px'}}> <SearchBar/> <Graphs style={{margin:'30px'}}/></div>
+              
+              <div style={{marginTop:'8%'}}> <TimeStamp data={this.state.Total} /><SearchBar/> <Graphs style={{margin:'30px'}}/></div>
             </div>
            
           </div>

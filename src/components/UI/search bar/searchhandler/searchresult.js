@@ -44,7 +44,7 @@ class SearchData extends React.Component{
                             
                             }
                         }
-                
+                        
                     }
                     this.setState({
                         district_data:[
