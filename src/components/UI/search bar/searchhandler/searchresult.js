@@ -93,16 +93,19 @@ class SearchData extends React.Component{
            <div style={{display:'flex'}} >
                
                <table style={{padding:'0px'}}>
-                    <thead>
-                    <button onClick={this.searchDeleteHandler} style={{marginLeft:'200%'}}><i className="fa fa-times fa-lg" aria-hidden="true" style={{color:'#726B6B'}}></i></button>
+                    <thead >
+                    <tr><th></th><th style={{textAlign:'right',marginLeft:'30%'}}> <button onClick={this.searchDeleteHandler} ><i className="fa fa-times fa-lg" aria-hidden="true" style={{color:'#726B6B'}}></i></button></th></tr>
                         <tr>
                             <th style={{fontSize:'20px'}}>
                                 District
                             </th>
+                           
                             <th style={{fontSize:'20px'}}>
                              No. Of Cases
                          </th>
+                        
                         </tr>
+                       
                     </thead>
                     <tbody>
                        {districtCases}
