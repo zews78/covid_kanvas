@@ -57,7 +57,8 @@ import axios from 'axios';
                     maintainAspectRatio:false,
                     title:{
                     text:'Recovered Cases',
-                    fontSize:20,
+                    fontColor:'black',
+                    fontSize:25,
                     display:true,
                     
                     

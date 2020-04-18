@@ -7,20 +7,20 @@ const head=(props)=>{
         return(
             <div className='Head' key={info.statecode}>
                 <section className='ConfirmedData'>
-                    <h1 style={{textAlign:'left' ,fontSize:'100%'}}>Confirmed</h1>
-                    <div style={{fontSize:'175%'}}>{info.confirmed}</div>
+                    <h1 style={{textAlign:'left' ,fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}} >Confirmed</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%' }}>{info.confirmed}</div>
                 </section>
                 <section className='ActiveData'>
-                    <h1 style={{textAlign:'left',fontSize:'100%'}}>Active</h1>
-                    <div style={{fontSize:'175%'}}>{info.active}</div>
+                    <h1 style={{textAlign:'left',fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}}>Active</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%'}}>{info.active}</div>
                 </section>
                 <section className='RecoveredData'>
-                    <h1 style={{textAlign:'left',fontSize:'100%'}}>Recovered</h1>
-                    <div style={{fontSize:'175%'}}>{info.recovered}</div>
+                    <h1 style={{textAlign:'left',fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}}>Recovered</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%'}}>{info.recovered}</div>
                 </section>
                 <section className='DeathsData'>
-                    <h1 style={{textAlign:'left',fontSize:'100%'}}>Deaths</h1>
-                    <div style={{fontSize:'175%'}}>{info.deaths}</div>
+                    <h1 style={{textAlign:'left',fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}}>Deaths</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%'}}>{info.deaths}</div>
                 </section>
             </div>
         );

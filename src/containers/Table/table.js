@@ -55,39 +55,39 @@ class Table extends React.Component{
 
         return(
             <table >
-                <thead>
-                    <tr>
-                        <th>
-                            <div>
-                                <abbr>STATE/UT</abbr>
-                            </div>
+                <thead style={{borderBottom:"1px solid black"}}>
+                    <tr style={{fontSize:'18px'}}>
+                        <th >
+                            
+                                STATE/UT
+                            
                         </th>
                     
                    
                         <th>
-                            <div>
-                                <abbr>CONFIRMED</abbr>
-                            </div>
+                            
+                                CONFIRMED
+                            
                         </th>
                     
                     
                         <th>
-                            <div>
-                                <abbr>ACTIVE</abbr>
-                            </div>
+                            
+                                ACTIVE
+                            
                         </th>
                     
                     
                         <th>
-                            <div>
-                                <abbr>RECOVERED</abbr>
-                            </div>
+                            
+                                RECOVERED
+                            
                         </th>
                     
                         <th>
-                            <div>
-                                <abbr>DECEASED</abbr>
-                            </div>
+                            
+                                DECEASED
+                            
                         </th>
                     </tr>
                 </thead>

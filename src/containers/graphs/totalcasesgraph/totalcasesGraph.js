@@ -56,7 +56,8 @@ import axios from 'axios';
                     maintainAspectRatio:false,
                     title:{
                       text:'Total Cases',
-                      fontSize:20,
+                      fontSize:25,
+                      fontColor:'black',
                     display:true,
                     
                     
