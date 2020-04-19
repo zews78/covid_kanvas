@@ -1,0 +1,18 @@
+.question{
+    color: #000000;
+    font-weight: bold;
+    padding: 6px;
+}
+
+.answer{
+    color: rgb(29, 138, 29);
+    padding: 6px;
+}
+.faq{
+    padding: 10px ;
+    background-color:#E0E5EC;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    margin: 20px  auto;
+    width: 60%;
+    text-align: center;
+}

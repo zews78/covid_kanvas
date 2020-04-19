@@ -5,7 +5,7 @@
     text-align: left;
 }
 section{
-
+    cursor: pointer;
     width: 60%;
     margin-left: 4%;
     text-align: center;

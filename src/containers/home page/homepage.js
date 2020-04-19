@@ -48,7 +48,7 @@ class Homepage extends React.Component{
             
               <Table/> 
               
-              <div style={{marginTop:'8%'}}> <TimeStamp data={this.state.Total} /><SearchBar/> <Graphs style={{margin:'30px'}}/></div>
+              <div style={{marginTop:'4%'}}> <TimeStamp data={this.state.Total} /><SearchBar/> <Graphs style={{margin:'30px'}}/></div>
             </div>
            
           </div>

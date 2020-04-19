@@ -17,8 +17,7 @@ class Table extends React.Component{
             this.setState({state_data:response.data.statewise.slice(1,38) });
             this.setState({total_data:response.data.statewise.slice(0,1)});            
             
-            console.log(this.state.state_data);
-            console.log(this.state.total_data[0]);
+        
             
           });
   }
@@ -58,36 +57,19 @@ class Table extends React.Component{
                 <thead style={{borderBottom:"1px solid black"}}>
                     <tr style={{fontSize:'18px'}}>
                         <th >
-                            
                                 STATE/UT
-                            
                         </th>
-                    
-                   
                         <th>
-                            
                                 CONFIRMED
-                            
                         </th>
-                    
-                    
                         <th>
-                            
                                 ACTIVE
-                            
                         </th>
-                    
-                    
                         <th>
-                            
                                 RECOVERED
-                            
                         </th>
-                    
                         <th>
-                            
                                 DECEASED
-                            
                         </th>
                     </tr>
                 </thead>
