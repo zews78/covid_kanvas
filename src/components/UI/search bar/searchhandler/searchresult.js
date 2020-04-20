@@ -79,7 +79,9 @@ class SearchData extends React.Component{
                     if(index===i){
                                 datas= <tr key={index}> 
                                             <td><strong>{name}</strong></td>
+                                           
                                             <td>{number}</td>
+                                          
                                         </tr>
                                 }
                             return datas
@@ -97,13 +99,13 @@ class SearchData extends React.Component{
                     <tr><th></th><th style={{textAlign:'right',marginLeft:'30%'}}> <button onClick={this.searchDeleteHandler} ><i className="fa fa-times fa-lg" aria-hidden="true" style={{color:'#726B6B'}}></i></button></th></tr>
                         <tr>
                             <th style={{fontSize:'20px'}} className='districtNames'>
-                               <pre style={{cursor:'pointer',fontFamily:'inherit'}}> District</pre>
+                               <pre style={{cursor:'pointer',fontFamily:'inherit',borderBottom:'1px solid black'}}> District</pre>
                             </th>
-                           
+
                             <th style={{fontSize:'20px'}}  >
-                               <pre style={{cursor:'pointer',fontFamily:'inherit'}}>No.Of Cases</pre>
+                               <pre style={{cursor:'pointer',fontFamily:'inherit',borderBottom:'1px solid black'}}>No.Of Cases</pre>
                          </th>
-                        
+
                         </tr>
                        
                     </thead>

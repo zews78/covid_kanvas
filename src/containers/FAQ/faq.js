@@ -29,7 +29,7 @@ class Faq extends React.Component{
 
         return(
             <div style={{justifyContent:'center'}}>
-                <h3 style={{textAlign:"center"}}>Some frequently asked questions</h3>
+                <h3 style={{textAlign:"center",paddingTop:'5%'}}>Some frequently asked questions</h3>
                 {faqs}
             </div>
         );

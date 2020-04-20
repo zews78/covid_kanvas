@@ -8,22 +8,22 @@ const head=(props)=>{
         return(
             <div className='Head' key={info.statecode}>
                 
-                <section className='ConfirmedData'>
-                    <h1 style={{textAlign:'left' ,fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}} >Confirmed</h1>
-                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%' }}>{info.confirmed}</div>
-                </section>
-                <section className='ActiveData'>
-                    <h1 style={{textAlign:'left',fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}}>Active</h1>
-                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%'}}>{info.active}</div>
-                </section>
-                <section className='RecoveredData'>
-                    <h1 style={{textAlign:'left',fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}}>Recovered</h1>
-                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%'}}>{info.recovered}</div>
-                </section>
-                <section className='DeathsData'>
-                    <h1 style={{textAlign:'left',fontSize:'100%',marginLeft:'10%',marginBottom:'4%'}}>Deaths</h1>
-                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'10%',marginBottom:'4%'}}>{info.deaths}</div>
-                </section>
+                <div className='ConfirmedData section'>
+                    <h1 className='label' style={{textAlign:'left' ,fontSize:'100%',marginLeft:'33%',marginBottom:'8%',marginTop:'3%'}} >Confirmed</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'33%',marginBottom:'8%' }}>{info.confirmed}</div>
+                </div>
+                <div className='ActiveData section'>
+                    <h1 className='label'  style={{textAlign:'left',fontSize:'100%',marginLeft:'33%',marginBottom:'8%',marginTop:'3%'}}>Active</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'33%',marginBottom:'8%'}}>{info.active}</div>
+                </div>
+                <div className='RecoveredData section'>
+                    <h1 className='label'  style={{textAlign:'left',fontSize:'100%',marginLeft:'33%',marginBottom:'8%',marginTop:'3%'}}>Recovered</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'33%',marginBottom:'8%'}}>{info.recovered}</div>
+                </div>
+                <div className='DeathsData section'>
+                    <h1 className='label'  style={{textAlign:'left',fontSize:'100%',marginLeft:'33%',marginBottom:'8%',marginTop:'3%'}}>Deaths</h1>
+                    <div style={{fontSize:'175%',textAlign:'left',marginLeft:'33%',marginBottom:'8%'}}>{info.deaths}</div>
+                </div>
             </div>
         );
     })

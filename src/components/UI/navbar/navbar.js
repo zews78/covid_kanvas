@@ -19,10 +19,10 @@ class NavBar extends React.Component{
         return(
             <div className='NavBar'    >
                <div className="topnav" id="myTopnav">
-                        <NavLink to="/" exact ><i className="fa fa-home" aria-hidden="true"></i> Home</NavLink>
+                        <NavLink to="/" exact >COVID-19 INDIA</NavLink>
                         <NavLink to="/faq/" exact className='Faq'><i className="fa fa-question-circle" aria-hidden="true"></i> FAQs</NavLink>
                         <NavLink to="/suggestion/" exact className='suggestions'><i className="fa fa-lightbulb-o" aria-hidden="true"></i> Suggestions</NavLink>
-                        <a href="/"className='about'><i className="fas fa-virus"></i>About</a>
+                        <NavLink  to="/about" className='about'><i className="fas fa-virus"></i>About COVID-19</NavLink>
                         <button className="icon" onClick={this.myFunction} style={{backgroundColor:'transparent',color:'white',fontSize:'20px',padding:'13px'}}>
                             <i className="fa fa-bars"></i>
                         </button>

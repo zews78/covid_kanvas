@@ -37,7 +37,7 @@ class Homepage extends React.Component{
         let homepage=<div style={{marginLeft:'49%',marginTop:'20%'}}><Spinner/></div>;
         if(!this.state.loading){
             return homepage=<div className="App">
-               
+               <h1 className='heading'>COVID-19 INDIA TRACKER</h1>
             <div style={{textAlign:'center',marginLeft:'-75px'}}>
               
               <Head data={this.state.Total}/>
@@ -45,7 +45,7 @@ class Homepage extends React.Component{
             </div>
             
             <div className='Content'>
-            <div style={{marginTop:'4%'}}> <TimeStamp data={this.state.Total} /><SearchBar/> <Graphs style={{margin:'30px'}}/></div>
+            <div style={{marginTop:'10%'}} className='headerdiv'> <TimeStamp data={this.state.Total} /><SearchBar/> <Graphs style={{margin:'30px'}}/></div>
               <Table/> 
               
               
@@ -55,9 +55,13 @@ class Homepage extends React.Component{
         }
 
         return(
+          <div>
+            
             <div>
+            
                 {homepage}
             </div>
+          </div>
         );
     }
 }

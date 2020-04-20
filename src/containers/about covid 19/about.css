@@ -1,0 +1,14 @@
+body{
+    font-family:  'Open Sans', sans-serif;
+}
+.aboutPage{
+    margin-top: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: left;
+}
+
+.aboutPage h1{
+    margin-top:5% ;
+    margin-bottom:3% ;
+}

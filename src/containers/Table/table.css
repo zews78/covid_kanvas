@@ -12,10 +12,13 @@ table{
 }
 
 th{
-    padding: 10px;
-  
-    
+    padding: 10px;  
 }
+tbody{
+    border-top:1px solid black;
+}
+
+
 td{
 
 padding: 10px;
@@ -56,6 +59,8 @@ td:active {
     width: 30%;
     
 }
+
+
 @media(max-width:500px){
     .table{
         border: 1px solid rgb(187, 185, 185);

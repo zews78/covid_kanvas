@@ -42,12 +42,13 @@ class Table extends React.Component{
             return( 
                    
                    <tr key={post.statecode}>
-                       <td className='States' >{post.state}</td>
-                       <td className='Confirmed'>{post.confirmed}</td>
-                       <td className='Active'>{post.active}</td>
-                       <td className='Recovered'>{post.recovered}</td>
-                       <td className='Deaths'>{post.deaths} </td>
+                       <td className='States' > <hr/>{post.state}  </td>
+                       <td className='Confirmed'> <hr/>{post.confirmed}</td>
+                       <td className='Active'> <hr/>{post.active}</td>
+                       <td className='Recovered'> <hr/>{post.recovered}</td>
+                       <td className='Deaths'> <hr/>{post.deaths} </td>
                    </tr>
+                   
                
                );
          });
@@ -56,27 +57,36 @@ class Table extends React.Component{
             <div className='table'>
             <table >
                 <thead style={{borderBottom:"1px solid black"}}>
-                    <tr style={{fontSize:'18px'}}>
+                    <tr className='headrow' style={{fontSize:'18px'}}>
                         <th >
                                 STATE/UT
+                                <hr/>
                         </th>
+                     
                         <th>
                                 CONFIRMED
+                                <hr/>
                         </th>
                         <th>
                                 ACTIVE
+                                <hr/>
                         </th>
                         <th>
                                 RECOVERED
+                                <hr/>
                         </th>
                         <th>
                                 DECEASED
+                                <hr/>
                         </th>
                     </tr>
+                   
                 </thead>
+                
                 <tbody >
                     {row}
                 </tbody>
+               
                 <tbody>
                     {total}
                 </tbody>

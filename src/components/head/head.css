@@ -3,8 +3,9 @@
     padding: 5% ;
     Width:60%;
     text-align: left;
+    overflow: relative;
 }
-section{
+.section{
     cursor: pointer;
     width: 60%;
     margin-left: 4%;
@@ -53,5 +54,8 @@ section{
     }
     body{
         text-align: center;
+    }
+    .label{
+        margin-left: 33%;
     }
 }
