@@ -43,12 +43,12 @@ class Homepage extends React.Component{
               <Head data={this.state.Total}/>
               
             </div>
-    
-            <div className='Content'>
             
+            <div className='Content'>
+            <div style={{marginTop:'4%'}}> <TimeStamp data={this.state.Total} /><SearchBar/> <Graphs style={{margin:'30px'}}/></div>
               <Table/> 
               
-              <div style={{marginTop:'4%'}}> <TimeStamp data={this.state.Total} /><SearchBar/> <Graphs style={{margin:'30px'}}/></div>
+              
             </div>
            
           </div>

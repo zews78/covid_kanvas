@@ -18,6 +18,7 @@ class SearchBar extends React.Component{
     submitHandler=(event)=>{
         event.preventDefault();
         this.setState({district:this.state.input});
+        document.getElementById("searchfield").value="";
     }
     
 
@@ -33,8 +34,8 @@ class SearchBar extends React.Component{
         return(
         <div className='Search'  >
             <form>
-                <input type='text'  className='SearchBar' placeholder='Search For Your State' onChange={this.changeHandler} />
-                <button className='placeholder' onClick={this.submitHandler}><i className="fa fa-search fa-2x"></i></button>
+                <input type='text'  className='SearchBar' placeholder='Search For Your State' onChange={this.changeHandler} id='searchfield'/>
+                <button className='placeholder' onClick={this.submitHandler} style={{backgroundColor:'transparent'}}><i className="fa fa-search fa-2x"></i></button>
             </form>
            <Searchresult searched={this.state.district}/>
         </div>

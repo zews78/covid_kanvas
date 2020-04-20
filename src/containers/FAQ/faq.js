@@ -22,8 +22,8 @@ class Faq extends React.Component{
 
         const faqs=this.state.faqData.map(data=>{
            return <div key={data.qno} className='faq'>
-                    <p className="question"><span>{data.qno}</span>  {data.question}</p>
-                    <p className='answer'><strong >Answer</strong> {data.answer}</p>
+                    <p className="question"><span>Question{+data.qno+1}:</span>  {data.question}</p>
+                    <p className='answer'><strong >Answer:</strong> {data.answer}</p>
                     </div>
         })
 

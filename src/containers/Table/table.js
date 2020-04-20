@@ -53,6 +53,7 @@ class Table extends React.Component{
          });
 
         return(
+            <div className='table'>
             <table >
                 <thead style={{borderBottom:"1px solid black"}}>
                     <tr style={{fontSize:'18px'}}>
@@ -80,6 +81,7 @@ class Table extends React.Component{
                     {total}
                 </tbody>
             </table>
+            </div>
         );
     }
 }

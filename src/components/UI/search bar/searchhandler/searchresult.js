@@ -90,18 +90,18 @@ class SearchData extends React.Component{
               
            search=( <div >
            
-           <div style={{display:'flex'}} >
+           <div className='searchResultBox' >
                
-               <table style={{padding:'0px'}}>
+               <table className='SearchResult' style={{padding:'0px'}}>
                     <thead >
                     <tr><th></th><th style={{textAlign:'right',marginLeft:'30%'}}> <button onClick={this.searchDeleteHandler} ><i className="fa fa-times fa-lg" aria-hidden="true" style={{color:'#726B6B'}}></i></button></th></tr>
                         <tr>
-                            <th style={{fontSize:'20px'}}>
-                                District
+                            <th style={{fontSize:'20px'}} className='districtNames'>
+                               <pre style={{cursor:'pointer',fontFamily:'inherit'}}> District</pre>
                             </th>
                            
-                            <th style={{fontSize:'20px'}}>
-                             No. Of Cases
+                            <th style={{fontSize:'20px'}}  >
+                               <pre style={{cursor:'pointer',fontFamily:'inherit'}}>No.Of Cases</pre>
                          </th>
                         
                         </tr>

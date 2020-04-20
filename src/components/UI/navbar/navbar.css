@@ -5,6 +5,7 @@ body {
   }
   
   .topnav {
+  
       width: 100%   ;
     overflow: hidden;
     
@@ -62,6 +63,7 @@ body {
     .topnav.responsive {position:relative; }
     .topnav.responsive .icon {
       position: absolute;
+      
       right: 0;
       top: 0;
     }

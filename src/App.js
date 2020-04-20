@@ -18,7 +18,7 @@ class App extends React.Component {
       <BrowserRouter>
           <div>
                 <NavBar/>
-                <p style={{textAlign:'center'}}>*WORK IN PROGREE*(  USE DEKTOP MODE )</p>
+                
                 <Switch>
                   <Route path='/suggestion/' component={Suggestion}/>
                   <Route path='/faq/' component={FAQ}/>
