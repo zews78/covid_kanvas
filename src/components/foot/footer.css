@@ -1,0 +1,48 @@
+.footerBar{
+    background-color: #1D1C1C;
+    
+    color: #1D1C1C;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+.icon{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+   
+    font-size: 25px;
+}
+.username{
+    color:white;
+    font-size:20px;
+    padding:10px;
+    
+}
+
+@media(max-width:500px){
+    .icon{
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .username{
+        font-size: 10px;
+    }
+    .footerBar{
+        display: grid; 
+        text-align: left;
+    }
+    .username{
+        padding: 4%;
+    }
+    a{
+        padding: 3%;
+    }
+}

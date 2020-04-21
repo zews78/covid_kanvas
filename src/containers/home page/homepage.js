@@ -38,9 +38,9 @@ class Homepage extends React.Component{
         if(!this.state.loading){
             return homepage=<div className="App">
                <h1 className='heading'>COVID-19 INDIA TRACKER</h1>
-            <div style={{textAlign:'center',marginLeft:'-75px'}}>
+            <div className='headbox' style={{textAlign:'center',marginLeft:'-75px'}}>
               
-              <Head data={this.state.Total}/>
+              <Head  data={this.state.Total}/>
               
             </div>
             

@@ -57,7 +57,7 @@ class Table extends React.Component{
             <div className='table'>
             <table >
                 <thead style={{borderBottom:"1px solid black"}}>
-                    <tr className='headrow' style={{fontSize:'18px'}}>
+                    <tr className='headrow' >
                         <th >
                                 STATE/UT
                                 <hr/>

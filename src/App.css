@@ -25,10 +25,10 @@ body{
   }
   body{
     overflow-x: none;
-   
-   
     padding:    0px;
+  }
 
-    
+  .footBanner{
+    font-size: 22px;
   }
 }

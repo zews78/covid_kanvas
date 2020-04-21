@@ -1,6 +1,7 @@
 .Head{
     display: flex;
-    padding: 5% ;
+    padding-top: 5% ;
+    padding-left: 5% ;
     Width:60%;
     text-align: left;
     overflow: relative;
@@ -36,6 +37,21 @@
     border-radius: 5px;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
 }
+.label{
+    /* style={{textAlign:'left',fontSize:'100%',marginLeft:'33%',marginBottom:'8%',marginTop:'3%'}} */
+    text-align: left;
+    font-size: 100%;
+    margin-left: 33%;
+    margin-bottom: 8%;
+    margin-top: 3%;
+}
+.numbers{
+    /* style={{fontSize:'175%',textAlign:'left',marginLeft:'33%',marginBottom:'8%'}} */
+    font-size: 175%;
+    text-align: left;
+    margin-left: 33%;
+    margin-bottom: 8%;
+}
 
 .Header{
     text-align: center;
@@ -43,19 +59,38 @@
 
 @media(max-width:500px){
     .Head{
-        width: 100%;
+        width: auto;
         height: 350px;
         display: block;
         box-sizing: border-box;
         text-align: center;
         padding: 20px ;
-        margin-left: 25%;
+        margin-left: 30%;
         
     }
     body{
         text-align: center;
     }
-    .label{
-        margin-left: 33%;
+    .section{
+        cursor: pointer;
+        width: 60%;
+        margin-left: 4%;
+        text-align: left;
+        box-sizing: border-box;
     }
+    .label{
+        text-align: left;
+        font-size: 100%;
+        margin-left: 10%;
+        margin-bottom: 8%;
+        margin-top: 3%;
+    }
+    .numbers{
+        /* style={{fontSize:'175%',textAlign:'left',marginLeft:'33%',marginBottom:'8%'}} */
+        font-size: 175%;
+        text-align: left;
+        margin-left: 10%;
+        margin-bottom: 8%;
+    }
+    
 }

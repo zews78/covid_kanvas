@@ -9,9 +9,9 @@ class Graphs extends React.Component{
     render(){
         return(
             <div className='Graphs'>
-                <div style={{paddingTop:'5%'}}><TotalCasesGraph /></div>
-                <div style={{paddingTop:'5%'}}><RecoveredCasesGraph/></div>
-                <div style={{paddingTop:'5%'}}><DeceasedCasesGraph/></div>
+                <div  className='graph'><TotalCasesGraph /></div>
+                <div  className='graph'><RecoveredCasesGraph/></div>
+                <div  className='graph'><DeceasedCasesGraph/></div>
             </div>
         );
     }

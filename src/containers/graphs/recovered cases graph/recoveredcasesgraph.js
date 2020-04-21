@@ -38,7 +38,7 @@ import axios from 'axios';
   render() {
     
     return (
-      <div  >
+      <div className='recoveredcasegraph' >
          
             <Line
                 width={700}

@@ -37,7 +37,7 @@ import axios from 'axios';
   render() {
     
     return (
-      <div  >
+      <div className='totalcasegraph' >
          
             <Line
                 width={100}
