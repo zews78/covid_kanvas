@@ -1,6 +1,7 @@
 .Graphs{
    padding-right: 100px;
    padding-left: 25px;
+   padding-top: 10%;
 }
 @media(max-width:500px){
    .Graphs{
