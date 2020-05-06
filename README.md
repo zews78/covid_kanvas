@@ -1,68 +1,32 @@
+# COVID-19 India Tracker
+> *You may not control all the events that happen to you, but you can decide not to be reduced by them.
+> -Maya Angelou*
+
+
+![User Interface 1](/images/UI1.png)
+
+**The main user interface of the COVID Dashboard**
+
+![User Interface 2](/images/UI2.png)
+
+- **Main Dashboard:**
+  - [Click here!](https://gawds.in/covid_kanvas)
+   
+This **COVID-19 INDIA TRACKER** provides users the details and information regarding the number of *Confirmed*, *Active*, *Recovered*, and *Deceased* cases of Novel Coronavirus in India. The data and statistics is visualised in the form of graphs, and table containing the number of cases of individual states and union territories.
+Furthermore, one can search for a particular state also which will result in the data displayed in tabular form (with cases of all the respective cities and districts). <br/><br/>
+There are facilities provided for `About COVID 19`, `FAQs`, and `Suggestions`.<br/><br/>
+The data updation is quite frequent, thanks to the API used!
+
+## API Used
+The API used in this dashboard is **COVID19-India API**, which is a volunteer-driven, crowdsourced database for COVID-19 stats & patient tracing in India. It uses state bulletins and official handles to update the numbers. The data is validated by a group of volunteers and published into a Google sheet and an API. API is available for all at [api.covid19india.org](api.covid19india.org). <br/><br/>
+
+**For more information related to database, visit:** [https://github.com/covid19india/api](https://github.com/covid19india/api).
+
+## Setup
+* To run the code, clone the repo, and install node modules in the root directory of the project.
+* Run **npm start** and the project will execute on [http://localhost:3000](http://localhost:3000) in development mode.
+
+## Suggestions
+The suggestions and contributions to this dashboard are always welcome and appreciable.<br/><br/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
