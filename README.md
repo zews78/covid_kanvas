@@ -18,15 +18,15 @@ There are facilities provided for `About COVID 19`, `FAQs`, and `Suggestions`.<b
 The data updation is quite frequent, thanks to the API used!
 
 ## API Used
-The API used in this dashboard is **COVID19-India API**, which is a volunteer-driven, crowdsourced database for COVID-19 stats & patient tracing in India. It usee state bulletins and official handles to update the numbers. The data is validated by a group of volunteers and published into a Google sheet and an API. API is available for all at [api.covid19india.org](api.covid19india.org). <br/><br/>
+The API used in this dashboard is **COVID19-India API**, which is a volunteer-driven, crowdsourced database for COVID-19 stats & patient tracing in India. It uses state bulletins and official handles to update the numbers. The data is validated by a group of volunteers and published into a Google sheet and an API. API is available for all at [api.covid19india.org](api.covid19india.org). <br/><br/>
 
 **For more information related to database, visit:** [https://github.com/covid19india/api](https://github.com/covid19india/api).
 
 ## Setup
 * To run the code, clone the repo, and install node modules in the root directory of the project.
-* Run the command **npm start** and the project will execute on [http://localhost:3000](http://localhost:3000) in development mode.
+* Run **npm start** and the project will execute on [http://localhost:3000](http://localhost:3000) in development mode.
 
 ## Suggestions
 The suggestions and contributions to this dashboard are always welcome and appreciable.<br/><br/>
 
-his project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
