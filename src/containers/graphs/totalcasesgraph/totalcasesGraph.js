@@ -12,7 +12,6 @@ class RecoveredCasesGraph extends React.Component {
   }
 
   componentDidMount() {
-      console.log("simple");
       axios.get("https://api.covid19india.org/data.json").then((res) => {
         let date = [];
         let confirmedcases = [];
@@ -80,7 +79,6 @@ class RecoveredCasesGraph extends React.Component {
               'Lakshadweep':'LD',
               'Puducherry':'PY',
             }
-            console.log(res);
             let date = [];
             let confirmedcases = [];
             let stateCode = stateCodes[this.props.searchTerm];
@@ -128,7 +126,7 @@ class RecoveredCasesGraph extends React.Component {
             maintainAspectRatio: false,
             title: {
               text: "Total Cases",
-              fontSize: 40,
+              fontSize: 25,
               fontColor: "black",
               display: true,
             },

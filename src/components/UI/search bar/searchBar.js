@@ -3,9 +3,6 @@ import "font-awesome/css/font-awesome.min.css";
 import "./searchBar.css";
 import Searchresult from "./searchhandler/searchresult";
 
-// import Graphs from "../../../containers/graphs/graphs";
-// import Homepage from "../../../containers/home page/homepage";
-
 
 class SearchBar extends React.Component {
   state = {
@@ -23,22 +20,12 @@ class SearchBar extends React.Component {
   submitHandler = (event) => {
     event.preventDefault();
     this.setState({ district: this.state.input });
-    // console.log(this.state.ifSearched);
-    // if(this.state.ifSearched === true) {
-    //   alert("hi");
-    //   // call back to Homepage
-    //   this.props.handleSearchGraph(this.state.input);
-    // }
     document.getElementById("searchfield").value = "";
-
-
   };
 
   ifSearchedHandler = (searchTerm) => {
     this.setState({ifSearched: true});
-    // console.log("hello palak");
     this.props.handleSearchGraph(searchTerm);
-
   }
 
   render() {
@@ -61,9 +48,6 @@ class SearchBar extends React.Component {
           </button>
         </form>
         <Searchresult searched={this.state.district} ifSearched={this.ifSearchedHandler}/>
-
-        {/* call for graph */}
-        {/* <Graphs style={{ margin: "30px" }} /> */}
       </div>
     );
   }

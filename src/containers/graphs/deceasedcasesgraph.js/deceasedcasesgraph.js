@@ -75,7 +75,6 @@ class DeceasedCasesGraph extends React.Component {
             'Lakshadweep':'LD',
             'Puducherry':'PY',
           }
-          console.log(res);
           let date = [];
           let deceasedcases = [];
           let stateCode = stateCodes[this.props.searchTerm];

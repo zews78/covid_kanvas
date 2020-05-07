@@ -75,7 +75,6 @@ class RecoveredCasesGraph extends React.Component {
             'Lakshadweep':'LD',
             'Puducherry':'PY',
           }
-          console.log(res);
           let date = [];
           let recoveredcases = [];
           let stateCode = stateCodes[this.props.searchTerm];
