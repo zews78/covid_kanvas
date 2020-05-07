@@ -6,16 +6,21 @@ import RecoveredCasesGraph from "./recovered cases graph/recoveredcasesgraph";
 
 class Graphs extends React.Component {
   render() {
+    console.log("in graph section");
+    // if(this.props.searchTerm !== '') {
+      // alert("Bro, you did something atlast!");
+// 
+    // }
     return (
       <div className="Graphs">
         <div className="graph">
-          <TotalCasesGraph />
+          <TotalCasesGraph searchTerm = {this.props.searchTerm}/>
         </div>
         <div className="graph">
-          <RecoveredCasesGraph />
+          <RecoveredCasesGraph searchTerm = {this.props.searchTerm}/>
         </div>
         <div className="graph">
-          <DeceasedCasesGraph />
+          <DeceasedCasesGraph searchTerm = {this.props.searchTerm}/>
         </div>
       </div>
     );

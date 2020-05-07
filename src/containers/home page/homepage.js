@@ -9,12 +9,25 @@ import Head from "../../components/head/head";
 import "./homepage.css";
 
 class Homepage extends React.Component {
-  state = {
-    posts: [],
-    Total: [],
-    labels: [],
-    loading: true,
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      posts: [],
+      Total: [],
+      labels: [],
+      loading: true,
+      searchTerm: '',
+    };
+
+    this.handleSearchGraph = this.handleSearchGraph.bind(this);
+  }
+
+
+  handleSearchGraph(term) {
+    // alert("Bro i guess its working");
+    this.setState({searchTerm: term});
+  }
 
   componentDidMount() {
     axios.get("https://api.covid19india.org/data.json").then((response) => {
@@ -24,8 +37,8 @@ class Homepage extends React.Component {
         timeStamp: response.data.statewise.slice(0, 1).lastupdatedtime,
       });
       this.setState({ loading: false });
-    });
-  }
+  });
+}
   render() {
     let homepage = (
       <div style={{ marginLeft: "49%", marginTop: "20%" }}>
@@ -33,6 +46,7 @@ class Homepage extends React.Component {
       </div>
     );
     if (!this.state.loading) {
+
       return (homepage = (
         <div className="App">
           <h1 className="heading">COVID-19 INDIA TRACKER</h1>
@@ -47,7 +61,7 @@ class Homepage extends React.Component {
             <div style={{ marginTop: "10%" }} className="headerdiv">
               {" "}
               <TimeStamp data={this.state.Total} />
-              <SearchBar /> <Graphs style={{ margin: "30px" }} />
+              <SearchBar handleSearchGraph={this.handleSearchGraph}/> <Graphs searchTerm={this.state.searchTerm}/>
             </div>
             <Table />
           </div>
