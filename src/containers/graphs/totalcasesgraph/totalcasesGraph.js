@@ -42,20 +42,20 @@ class RecoveredCasesGraph extends React.Component {
         if(this.props.searchTerm !== '') {
           axios.get("https://api.covid19india.org/states_daily.json").then((res) => {
             let stateCodes = {
-              'AndhraPradesh':'AP',
-              'ArunachalPradesh':'AR',
+              'Andhra Pradesh':'AP',
+              'Arunachal Pradesh':'AR',
               'Assam':'AS',
               'Bihar':'BR',
               'Chhattisgarh':'CT',
               'Goa':'GA',
               'Gujarat':'GJ',
               'Haryana':'HR',
-              'HimachalPradesh':'HP',
-              'JammuandKashmir':'JK',
+              'Himachal Pradesh':'HP',
+              'Jammu And Kashmir':'JK',
               'Jharkhand':'JH',
               'Karnataka':'KA',
               'Kerala':'KL',
-              'MadhyaPradesh':'MP',
+              'Madhya Pradesh':'MP',
               'Maharashtra':'MH',
               'Manipur':'MN',
               'Meghalaya':'ML',
@@ -65,22 +65,23 @@ class RecoveredCasesGraph extends React.Component {
               'Punjab':'PB',
               'Rajasthan':'RJ',
               'Sikkim':'SK',
-              'TamilNadu':'TN',
+              'Tamil Nadu':'TN',
               'Telangana':'TG',
               'Tripura':'TR',
               'Uttarakhand':'UT',
-              'UttarPradesh':'UP',
-              'WestBengal':'WB',
-              'AndamanandNicobarIslands':'AN',
+              'Uttar Pradesh':'UP',
+              'West Bengal':'WB',
+              'Andaman And Nicobar Islands':'AN',
               'Chandigarh':'CH',
-              'DadraandNagarHaveli':'DN',
-              'DamanandDiu':'DD',
+              'Dadra And Nagar Haveli':'DN',
+              'Daman And Diu':'DD',
               'Delhi':'DL',
               'Lakshadweep':'LD',
               'Puducherry':'PY',
             }
             let date = [];
             let confirmedcases = [];
+            console.log(this.props.searchTerm);
             let stateCode = stateCodes[this.props.searchTerm];
             stateCode = stateCode.toLowerCase();
             for(let i = 0; i < res.data.states_daily.length; i+=3) {

@@ -9,7 +9,10 @@ class SearchData extends React.Component {
     district_data: [{ district_name: [] }, { district_cases: [] }],
   };
   capitalizeFirstLetter = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+    return str.toLowerCase()
+            .split(' ')
+            .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+            .join(' ');
   };
   searchDeleteHandler = () => {
     this.setState({
@@ -26,14 +29,17 @@ class SearchData extends React.Component {
           let names = [];
           let cases = [];
           for (let keys in this.state.state_data) {
-            if (keys === this.capitalizeFirstLetter(this.props.searched)) {
+            let searchTerm = this.capitalizeFirstLetter(this.props.searched);
+            let tempKeys = this.capitalizeFirstLetter(keys);
+            if (tempKeys === searchTerm) {
               for (let key in this.state.state_data[keys].districtData) {
+                // key = this.capitalizeFirstLetter(key);
                 names.push(key);
                 cases.push(
                   this.state.state_data[keys].districtData[key].confirmed
                 );
               }
-              this.props.ifSearched(this.capitalizeFirstLetter(this.props.searched));
+              this.props.ifSearched(searchTerm);
             }
           }
           this.setState({
