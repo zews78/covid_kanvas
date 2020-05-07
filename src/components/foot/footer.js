@@ -5,16 +5,16 @@ import "./footer.css";
 const footer = (props) => {
   return (
     <div className="footerBar">
-      <a href="https://github.com/mangeshupadhyay23">
+      <a href="https://github.com/gawdsnitkkr">
         {" "}
         <i className="fa fa-github git icon" aria-hidden="true"></i>
-        <abbr className="username">github.com/mangeshupadhyay23</abbr>
+        <abbr className="username">github.com/gwadsnitkkr</abbr>
       </a>
 
-      <a href="https://www.instagram.com/mangesh23_0/">
+      <a href="https://www.instagram.com/_gawds/">
         {" "}
         <i className="fa fa-instagram insta icon" aria-hidden="true"></i>
-        <abbr className="username">mangesh23_0</abbr>
+        <abbr className="username">_gawds</abbr>
       </a>
     </div>
   );
