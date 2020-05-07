@@ -9,7 +9,10 @@ class SearchData extends React.Component {
     district_data: [{ district_name: [] }, { district_cases: [] }],
   };
   capitalizeFirstLetter = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+    return str.toLowerCase()
+            .split(' ')
+            .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+            .join(' ');
   };
   searchDeleteHandler = () => {
     this.setState({
@@ -23,17 +26,20 @@ class SearchData extends React.Component {
         .get("https://api.covid19india.org/state_district_wise.json")
         .then((response) => {
           this.setState({ state_data: response.data });
-
           let names = [];
           let cases = [];
           for (let keys in this.state.state_data) {
-            if (keys === this.capitalizeFirstLetter(this.props.searched)) {
+            let searchTerm = this.capitalizeFirstLetter(this.props.searched);
+            let tempKeys = this.capitalizeFirstLetter(keys);
+            if (tempKeys === searchTerm) {
               for (let key in this.state.state_data[keys].districtData) {
+                // key = this.capitalizeFirstLetter(key);
                 names.push(key);
                 cases.push(
                   this.state.state_data[keys].districtData[key].confirmed
                 );
               }
+              this.props.ifSearched(searchTerm);
             }
           }
           this.setState({
@@ -60,7 +66,6 @@ class SearchData extends React.Component {
                   <td>
                     <strong>{name}</strong>
                   </td>
-
                   <td>{number}</td>
                 </tr>
               );
@@ -76,7 +81,7 @@ class SearchData extends React.Component {
             <table className="SearchResult" style={{ padding: "0px" }}>
               <thead>
                 <tr>
-                  <th></th>
+                  <th style={{fontSize:"30px"}}>{this.props.searched.toUpperCase()}</th>
                   <th style={{ textAlign: "right", marginLeft: "30%" }}>
                     {" "}
                     <button onClick={this.searchDeleteHandler}>

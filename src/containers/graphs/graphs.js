@@ -8,14 +8,15 @@ class Graphs extends React.Component {
   render() {
     return (
       <div className="Graphs">
+        <h1 style={{fontSize: "50px"}}>{this.props.searchTerm}</h1>
         <div className="graph">
-          <TotalCasesGraph />
+          <TotalCasesGraph searchTerm = {this.props.searchTerm}/>
         </div>
         <div className="graph">
-          <RecoveredCasesGraph />
+          <RecoveredCasesGraph searchTerm = {this.props.searchTerm}/>
         </div>
         <div className="graph">
-          <DeceasedCasesGraph />
+          <DeceasedCasesGraph searchTerm = {this.props.searchTerm}/>
         </div>
       </div>
     );
