@@ -144,7 +144,7 @@ class SearchData extends React.Component {
                         borderBottom: "1px solid black",
                       }}
                     >
-                      Cases
+                      Total Cases
                     </pre>
                   </th>
 
