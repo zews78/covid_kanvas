@@ -6,21 +6,28 @@ import axios from "axios";
 class SearchData extends React.Component {
   state = {
     state_data: [],
-    district_data: [{ district_name: [] }, { district_cases: [] }],
+    district_data: [{ district_name: [] }, { district_cases: [] }, {district_active: []}],
   };
+
+
   capitalizeFirstLetter = (str) => {
     return str.toLowerCase()
             .split(' ')
             .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
             .join(' ');
   };
+
+
   searchDeleteHandler = () => {
     this.setState({
-      district_data: [{ district_name: [] }, { district_cases: [] }],
+      district_data: [{ district_name: [] }, { district_cases: [] }, {district_active: []}],
       district: "",
     });
   };
+
+
   componentDidUpdate(prevProps) {
+
     if (prevProps.searched !== this.props.searched) {
       axios
         .get("https://api.covid19india.org/state_district_wise.json")
@@ -28,26 +35,46 @@ class SearchData extends React.Component {
           this.setState({ state_data: response.data });
           let names = [];
           let cases = [];
+          let active = [];
           for (let keys in this.state.state_data) {
             let searchTerm = this.capitalizeFirstLetter(this.props.searched);
             let tempKeys = this.capitalizeFirstLetter(keys);
             if (tempKeys === searchTerm) {
               for (let key in this.state.state_data[keys].districtData) {
-                // key = this.capitalizeFirstLetter(key);
                 names.push(key);
-                cases.push(
-                  this.state.state_data[keys].districtData[key].confirmed
-                );
+                //for sorting confirmed cases
+                for(let i in this.state.state_data[keys].districtData){
+                  cases.push(
+                    this.state.state_data[keys].districtData[i].confirmed
+                  );
+                  // cases.sort((a,b)=>{
+                  //   return b-a
+                  // });
+
+                  active.push(
+                    this.state.state_data[keys].districtData[i].active
+                  )
+                  
+                }
+
+                // console.log(keys,key);
               }
               this.props.ifSearched(searchTerm);
             }
           }
+          // console.log(this.state.state_data);
           this.setState({
             district_data: [
               { district_name: names },
               { district_cases: cases },
+              { district_active: active},
             ],
           });
+          // this.setState(prevState=>{
+          //   return{
+          //     district_cases: prevState.reverse()
+          //   }
+          // })
         });
     }
   }
@@ -56,13 +83,13 @@ class SearchData extends React.Component {
     let search = null;
     let districtCases = null;
     if (this.state.district_data[1].district_cases.length) {
-      districtCases = this.state.district_data[0].district_name.map(
-        (name, index) => {
-          return this.state.district_data[1].district_cases.map((number, i) => {
+      districtCases = this.state.district_data[1].district_cases.map(
+        (number, i) => {
+          return this.state.district_data[0].district_name.map((name, index) => {
             let datas = null;
-            if (index === i) {
+            if (i === index) {
               datas = (
-                <tr key={index}>
+                <tr key={i}>
                   <td>
                     <strong>{name}</strong>
                   </td>
@@ -71,9 +98,11 @@ class SearchData extends React.Component {
               );
             }
             return datas;
+            
           });
         }
-      );
+        );
+        console.log("hello",this.state.district_data[1]);
 
       search = (
         <div>
@@ -115,9 +144,22 @@ class SearchData extends React.Component {
                         borderBottom: "1px solid black",
                       }}
                     >
-                      No.Of Cases
+                      Cases
                     </pre>
                   </th>
+
+                  <th style={{ fontSize: "20px" }}>
+                    <pre
+                      style={{
+                        cursor: "pointer",
+                        fontFamily: "inherit",
+                        borderBottom: "1px solid black",
+                      }}
+                    >
+                      Active
+                    </pre>
+                  </th>
+
                 </tr>
               </thead>
               <tbody>{districtCases}</tbody>
